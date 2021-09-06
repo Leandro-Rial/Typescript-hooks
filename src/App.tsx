@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CustomHookComponent from './hooks/CustomHookComponents';
+import UseContextComponent from './hooks/UseContextComponent';
+import UseEffectComponent from './hooks/UseEffectComponent';
+import UseReducerComponent from './hooks/UseReducerComponent';
+import UseRefComponent from './hooks/UseRefComponent';
+import UseStateComponent from './hooks/UseStateComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>useState</h1>
+      <UseStateComponent />
+      <hr />
+      <h1>useEffect</h1>
+      <UseEffectComponent />
+      <hr />
+      <h1>useContext</h1>
+      <UseContextComponent />
+      <hr />
+      <h1>useReducer</h1>
+      <UseReducerComponent />
+      <hr />
+      <h1>useRef</h1>
+      <UseRefComponent />
+      <hr />
+      <h1>CustomHook</h1>
+      <CustomHookComponent />
     </div>
   );
 }
